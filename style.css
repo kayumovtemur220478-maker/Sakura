@@ -1,0 +1,521 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+::-webkit-scrollbar{
+    width: 10px;
+}
+::-webkit-scrollbar-track{
+    background-color: black;
+}
+::-webkit-scrollbar-thumb{
+    background: #e60000;
+    border-radius: 6px;
+}
+::-webkit-scrollbar-thumb:hover {
+    background: #b30000; 
+}
+::selection{
+    background-color: #e60000;
+    color: white;
+}
+::-moz-selection{
+     background-color: #e60000;
+    color: white;
+}
+html{
+    scroll-behavior: smooth;
+    overflow-x: hidden;
+}
+body{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    min-height: 100vh;
+    background-color: white;
+    overflow-x: hidden;
+}
+a{
+    text-decoration: none;
+}
+.site-header{
+    display: grid;
+     position: fixed; top: 0; left: 0;
+     width: 100%;
+     z-index: 100;
+   background-color: rgba(0, 0, 0, 0.75); 
+   backdrop-filter: blur(10px);
+   -webkit-backdrop-filter: blur(10px);
+    grid-template-columns: 1fr auto;
+    grid-template-rows: 1fr;
+    padding: 10px;
+    border-bottom: 3px solid orangered;
+}
+.logo{
+    width: max-content;
+    color: white;
+    font-family:  'Montserrat', sans-serif;
+    font-size: 35px;
+    letter-spacing: 2px;
+    font-weight: 600;
+    display: flex;
+    text-align: center;
+    align-items: center;
+    padding: 5px;
+    gap: 10px;
+    text-decoration: none;
+    user-select: none;
+}
+.logo img {
+  height: 35px;         
+    width: auto;           
+    border-radius: 50%;    
+    margin-right: 10px;  
+    object-fit: cover;
+}
+.nav-menu {
+    display: flex;
+    flex-direction: row; 
+    align-items: center; 
+    gap: 15px; 
+    border: none; 
+}
+.nav-menu a{
+    color: white;
+    font-size: 20px;
+    font-family: sans-serif;
+    padding: 10px 20px;
+    border-radius: 8px;
+    transition: all 0.3s ease;
+}
+.nav-menu a:hover {
+    color: #e60000; 
+}
+#hero-section{
+    display: grid;
+    grid-template-rows: 1fr;
+    grid-template-columns: 1fr 1fr;
+    background-color: white;
+    padding: 40px;
+    margin-top: 130px;
+}
+.hero-info{
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    flex-direction: column;
+    gap: 20px;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 20px;
+}
+.online-dot{
+    display: inline-block;
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    background-color: rgba(255, 255, 255, 0.873);
+    animation: pulse 2s ease infinite;
+    margin: 5px;
+}
+@keyframes pulse{
+    0%{
+    box-shadow: 0 0 0 0 rgba(255, 255, 255, 0.7); 
+    }
+    100%{
+      box-shadow: 0 0 0 10px rgba(0, 255, 0, 0);  
+    }
+}
+.hero-btn{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: orangered;
+    color: white;
+    padding: 15px 35px;
+    font-family: sans-serif;
+    font-size: 20px;
+    border-radius: 8px;
+    margin-top: 50px;
+    transition: 0.5s;
+}
+.hero-btn:hover{
+    transform: scale(1.07);
+   box-shadow: 0 10px 20px #fd6f6f;
+   background-color: rgb(250, 109, 58);
+}
+.hero-image img {
+    width: 100%;
+    height: 450px;
+    object-fit: cover;
+    clip-path: polygon(15% 0%, 100% 0%, 100% 100%, 0% 100%);
+    user-select: none;
+}
+#courses-section{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 0.5fr 1.5fr;
+    background-color: darkslategray;
+    color: white;
+}
+.section-title{
+    display: grid;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+    font-size: 35px;
+    letter-spacing: 3px;
+    margin: 30px;
+     background: linear-gradient(45deg, orange, red, orangered);
+     -webkit-background-clip: text;
+     -webkit-text-fill-color: transparent;
+}
+.courses-grid{
+    display: grid;
+    grid-template-rows: 1fr;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 35px;
+    padding: 30px;
+}
+.course-card{
+    display: grid;
+    background-color: rgb(78, 127, 127);
+    border: 3px solid orange;
+    border-radius: 12px;
+    padding: 8px;
+    transition: 0.7s;
+}
+.course-card:hover{
+    transform: scale(1.1);
+    border: 3px solid orangered;
+    box-shadow: 0 0 12px orangered;
+}
+.course-desc{
+    font-size: 20px;
+    font-family: sans-serif;
+    font-weight: 400;
+}
+.course-price{
+    font-size: 25px;
+    font-family: sans-serif;
+    font-weight: 450;
+}
+#advantages-section{
+    display: grid;
+    grid-template-rows: auto auto;
+    grid-template-columns: 1fr;
+    background-color: white;
+    padding: 60px 40px;
+}
+.advantages-title{
+    display: grid;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+    font-size: 35px;
+    letter-spacing: 3px;
+     background: linear-gradient(45deg, darkslategray, #b0b0b0);
+     -webkit-background-clip: text;
+     -webkit-text-fill-color: transparent;
+}
+.advantages-grid{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
+    gap: 30px;
+    padding: 20px;
+}
+.adv-card{
+     display: grid;
+     overflow: hidden;
+    border-radius: 12px;
+    padding: 8px;
+    box-shadow: 0 0 15px black;
+    transition: 0.4s;
+}
+.adv-card:hover{
+    transform: translateY(-10px);
+}
+.adv-icon img{
+    object-fit: cover;
+    user-select: none;
+    width: 100%;
+    height: 150px;
+}
+.u{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+    font-size: 25px;
+}
+.i{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: sans-serif;
+    font-weight: 400;
+    font-size: 20px;
+    color: #555555;
+    
+}
+
+#site-footer{
+    display: grid;
+    justify-content: center;
+    background-color: rgba(0, 0, 0, 0.71);
+    color: white;
+}
+.footer-container{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr;
+}
+.footer-info{
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+    font-size: 30px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+    letter-spacing: 3px;
+    color: lightgray;
+    margin: 60px;
+}
+.footer-text{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 25px;
+    padding: 10px;
+    color: white;
+}
+.footer-phone{
+    padding: 10px;
+    font-size: 15px;
+}
+.footer-gmail{
+    padding: 10px;
+    font-size: 15px;
+}
+.footer-gmail a {
+    color: white;
+    text-decoration: underline; 
+}
+.footer-gmail a:hover {
+    color: #e60000; 
+}
+
+.footer-tg-btn {
+    display:flex ;
+    width: 300px;
+    height: 80px;
+    align-items: center;
+    justify-content: center;
+    background-color: #e60000; 
+    color: white; 
+    font-family: sans-serif;
+    font-weight: 600;
+    font-size: 18px;
+    padding: 15px 30px; 
+    border-radius: 8px; 
+    margin-top: 20px;
+    box-shadow: 0 5px 15px rgba(255, 165, 0, 0.3); 
+    transition: 0.4s ease;
+}
+.footer-tg-btn:hover {
+    background-color: #e60000a9; 
+}
+.footer-social{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    font-size: 25px;
+    font-family: sans-serif;
+    font-weight: 500;
+}
+.footer-bottom{
+    display:flex;
+    height: 100px;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    font-family: 'Montserrat', sans-serif;
+    border-top: 3px solid orangered;
+    font-weight: 600;
+    font-size: 15px;
+     background: linear-gradient(45deg, #ff4d4d, #e60000, #ff4d4d);
+     -webkit-background-clip: text;
+     -webkit-text-fill-color: transparent;
+}
+@media (max-width:768px) {
+    .site-header{
+    display: grid;
+     position: fixed; top: 0; 
+     left: 0;
+     z-index: 100;
+     background-color: rgba(0, 0, 0, 0.75); 
+   backdrop-filter: blur(10px);
+   -webkit-backdrop-filter: blur(10px);
+    grid-template-columns: 1fr;
+    grid-template-rows: auto auto;
+    padding: 10px;
+    border-bottom: 3px solid orangered;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+}
+.logo{
+    width: max-content;
+    color: white;
+    font-family:  'Montserrat', sans-serif;
+    font-size: 25px;
+    letter-spacing: 2px;
+    font-weight: 600;
+    display: flex;
+    text-align: center;
+    align-items: center;
+    padding: 5px;
+    gap: 10px;
+    text-decoration: none;
+    user-select: none;
+    margin-left: 25px;
+}
+#hero-section{
+    display: grid;
+    grid-template-rows: 1fr;
+    grid-template-columns: 1fr;
+    background-color: white;
+    margin-top: 160px;
+}
+.hero-info{
+    display: flex;
+    width: 100%;
+    align-items: flex-start;
+    text-align: center;
+    justify-content: center;
+    flex-direction: column;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 15px;
+}
+.hero-image img {
+        height: 300px;
+        clip-path: polygon(0% 10%, 100% 0%, 100% 100%, 0% 100%); 
+    }
+.courses-grid{
+    display: grid;
+    grid-template-rows: auto;
+    grid-template-columns: 1fr;
+    gap: 35px;
+    padding: 30px;
+}
+.advantages-grid{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+    gap: 30px;
+    padding: 20px;
+}
+.footer-container{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+    text-align: center;
+}
+   .footer-tg-btn {
+        width: 100%; 
+        max-width: 300px;
+        margin: 10px;
+    }
+    .footer-text{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 15px;
+    padding: 10px;
+    color: white;
+}
+.footer-phone{
+    padding: 10px;
+    font-size: 13px;
+    font-weight: 550;
+}
+.footer-gmail{
+    padding: 10px;
+    font-size: 15px;
+    font-weight: 600;
+}
+.footer-bottom{
+    display:flex;
+    height: 50px;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    font-family: 'Montserrat', sans-serif;
+    border-top: 3px solid orangered;
+    font-weight: 600;
+    font-size: 12px;
+    letter-spacing: 0px;
+     background: linear-gradient(45deg, #ff4d4d, #e60000, #ff4d4d);
+     -webkit-background-clip: text;
+     -webkit-text-fill-color: transparent;
+}
+    .course-card {
+        width: 100%; 
+        max-width: 100%;
+        box-sizing: border-box;
+    }
+
+    .adv-card {
+        width: 100%;
+        max-width: 100%;
+        margin-top: 10px;
+        box-sizing: border-box;
+    }
+    .course-desc{
+    font-size: 15px;
+    margin: 5px;
+    font-family: sans-serif;
+    font-weight: 300;
+}
+.course-price{
+    font-size: 20px;
+    font-family: sans-serif;
+    font-weight: 350;
+    margin: 5px;
+}
+.nav-menu {
+    display: flex;
+    flex-direction: row; 
+    align-items: center; 
+    justify-content: center;
+    gap: 10px; 
+    border: none; 
+}
+.nav-menu a{
+    color: white;
+    font-size: 13px;
+    font-family: sans-serif;
+    padding: 6px 12px;
+    border: 2px solid transparent;
+    border-radius: 8px;
+    transition: all 0.3s ease;
+}
+#hero-section, #courses-section, #advantages-section {
+    padding: 30px 15px; 
+}
+.logo img {
+    height: 50px;
+    width: auto; 
+    border-radius: 50%;
+}
+.hero-btn{
+    margin-top: -10px;
+}
+.footer-info {
+    margin: 20px;
+    align-items: center;
+}
+
+}
