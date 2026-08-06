@@ -380,8 +380,8 @@ a{
 }
 
 .footer-tg-btn {
-    display:flex ;
-    width: auto;
+    display:flex;
+    width: 100%;
     min-width: 250px;
     height: 80px;
     align-items: center;
@@ -658,7 +658,7 @@ a{
     border-radius: 8px;
     transition: all 0.3s ease;
 }
-#hero-section, #courses-section, #advantages-section {
+#hero-section, #courses-section, #advantages-section, #languages-section, #stats-section, #site-footer {
     padding: 30px 15px; 
 }
 .logo img {
