@@ -27,6 +27,7 @@
 html{
     scroll-behavior: smooth;
     overflow-x: hidden;
+     scroll-padding-top: 90px;
 }
 body{
     display: flex;
@@ -68,7 +69,7 @@ a{
     user-select: none;
 }
 .logo img {
-  height: 35px;         
+  height: 50px;         
     width: auto;           
     border-radius: 50%;    
     margin-right: 10px;  
@@ -99,6 +100,7 @@ a{
     background-color: white;
     padding: 40px;
     margin-top: 130px;
+    gap: 40px;
 }
 .hero-info{
     display: flex;
@@ -151,15 +153,69 @@ a{
     clip-path: polygon(15% 0%, 100% 0%, 100% 100%, 0% 100%);
     user-select: none;
 }
+#stats-section {
+    background-color: #f9f9f9;
+    padding: 40px;
+    border-top: 3px solid #e60000;
+    border-bottom: 3px solid #e60000;
+}
+
+.stats-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 20px;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.stat-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 30px;
+    border-radius: 12px;
+    background: white;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.08);
+    transition: 0.3s ease;
+    cursor: default;
+}
+
+.stat-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 8px 25px rgba(230, 0, 0, 0.3);
+}
+
+.stat-number {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 50px;
+    font-weight: 600;
+    color: #e60000;
+    transition: 0.3s ease;
+}
+
+.stat-card:hover .stat-number {
+    transform: scale(1.15);
+    display: inline-block;
+}
+
+.stat-label {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 18px;
+    font-weight: 600;
+    color: #333;
+    margin-top: 8px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+}
 #courses-section{
     display: grid;
     grid-template-columns: 1fr;
-    grid-template-rows: 0.5fr 1.5fr;
-    background-color: darkslategray;
-    color: white;
+    grid-template-rows: auto auto;
+    background-color: white;
+    color: black;
 }
 .section-title{
-    display: grid;
     font-family: 'Montserrat', sans-serif;
     font-weight: 600;
     font-size: 35px;
@@ -178,26 +234,42 @@ a{
 }
 .course-card{
     display: grid;
-    background-color: rgb(78, 127, 127);
-    border: 3px solid orange;
+    width: 100%;
+    background-color: #ffffff;
+    border: 3px solid black;
     border-radius: 12px;
     padding: 8px;
-    transition: 0.7s;
+    transition: 0.3s;
+    gap: 15px;
+}
+.course-card h3 {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 22px;
+    font-weight: 600;
+    margin-bottom: 10px;
+    transition: 0.2s ease;
+}
+.course-card:hover h3{
+    font-size: 30px;
+    display: inline-block;
+    color: #b30000;
 }
 .course-card:hover{
-    transform: scale(1.1);
-    border: 3px solid orangered;
-    box-shadow: 0 0 12px orangered;
+     transform: translateY(-5px);   
+    border: 3px solid #b30000;
+    box-shadow: 0 0 12px #b30000;
 }
 .course-desc{
     font-size: 20px;
     font-family: sans-serif;
     font-weight: 400;
+    color: darkslategray;
 }
 .course-price{
     font-size: 25px;
     font-family: sans-serif;
-    font-weight: 450;
+    font-weight: 500;
+    color: #e60000;
 }
 #advantages-section{
     display: grid;
@@ -207,7 +279,6 @@ a{
     padding: 60px 40px;
 }
 .advantages-title{
-    display: grid;
     font-family: 'Montserrat', sans-serif;
     font-weight: 600;
     font-size: 35px;
@@ -261,9 +332,8 @@ a{
 
 #site-footer{
     display: grid;
-    justify-content: center;
-    background-color: rgba(0, 0, 0, 0.71);
-    color: white;
+    background-color: #ffffff;
+    color: black;
 }
 .footer-container{
     display: grid;
@@ -274,31 +344,35 @@ a{
     display: flex;
     justify-content: flex-start;
     flex-direction: column;
-    font-size: 30px;
+    font-size: 22px;
     font-family: 'Montserrat', sans-serif;
     font-weight: 600;
-    letter-spacing: 3px;
-    color: lightgray;
+    letter-spacing: 1px;
+    color: black;
     margin: 60px;
 }
 .footer-text{
     display: flex;
     align-items: center;
     justify-content: center;
-    font-size: 25px;
+    font-size: 16px;
     padding: 10px;
-    color: white;
+    color: black;
+    letter-spacing: 0px;
 }
 .footer-phone{
     padding: 10px;
+    width: max-content;
     font-size: 15px;
 }
 .footer-gmail{
     padding: 10px;
-    font-size: 15px;
+    width: max-content;
+    font-size: 14px;
+    color: black;
 }
 .footer-gmail a {
-    color: white;
+    color: black;
     text-decoration: underline; 
 }
 .footer-gmail a:hover {
@@ -307,7 +381,8 @@ a{
 
 .footer-tg-btn {
     display:flex ;
-    width: 300px;
+    width: auto;
+    min-width: 250px;
     height: 80px;
     align-items: center;
     justify-content: center;
@@ -349,7 +424,81 @@ a{
      -webkit-background-clip: text;
      -webkit-text-fill-color: transparent;
 }
+#languages-section {
+    padding: 60px 40px;
+    background-color: white;
+}
+
+#languages-section h2 {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 35px;
+    font-weight: 600;
+    letter-spacing: 3px;
+    margin-bottom: 30px;
+    background: linear-gradient(45deg, #e60000, orangered);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.lang-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+}
+
+.lang-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 30px 20px;
+    border-radius: 12px;
+    border: 2px solid #f0f0f0;
+    background: white;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.06);
+    transition: 0.3s ease;
+    cursor: default;
+    gap: 8px;
+}
+
+.lang-card:hover {
+    transform: translateY(-8px);
+    border-color: #e60000;
+    box-shadow: 0 8px 25px rgba(230,0,0,0.2);
+}
+
+.lang-card span {
+    font-size: 50px;
+    display: inline-block;
+    transition: 0.3s ease;
+}
+
+.lang-card:hover span {
+    transform: scale(1.2);
+}
+
+.lang-card h3 {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 20px;
+    font-weight: 600;
+    color: #1a1a1a;
+}
+
+.lang-card p {
+    font-family: sans-serif;
+    font-size: 14px;
+    color: #e60000;
+    font-weight: 600;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+}
 @media (max-width:768px) {
+    html{
+    scroll-behavior: smooth;
+    overflow-x: hidden;
+     scroll-padding-top: 120px;
+}
     .site-header{
     display: grid;
      position: fixed; top: 0; 
@@ -403,6 +552,14 @@ a{
         height: 300px;
         clip-path: polygon(0% 10%, 100% 0%, 100% 100%, 0% 100%); 
     }
+    .stats-grid {
+    grid-template-columns: 1fr;
+    gap: 15px;
+}
+
+.stat-number {
+    font-size: 40px;
+}
 .courses-grid{
     display: grid;
     grid-template-rows: auto;
@@ -434,11 +591,11 @@ a{
     justify-content: center;
     font-size: 15px;
     padding: 10px;
-    color: white;
+    color: black;
 }
 .footer-phone{
     padding: 10px;
-    font-size: 13px;
+    font-size: 16px;
     font-weight: 550;
 }
 .footer-gmail{
@@ -498,7 +655,6 @@ a{
     font-size: 13px;
     font-family: sans-serif;
     padding: 6px 12px;
-    border: 2px solid transparent;
     border-radius: 8px;
     transition: all 0.3s ease;
 }
@@ -517,5 +673,8 @@ a{
     margin: 20px;
     align-items: center;
 }
-
-}
+.lang-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 25px;
+} } 
