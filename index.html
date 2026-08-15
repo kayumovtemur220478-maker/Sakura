@@ -8,16 +8,22 @@
     <meta name="google" content="notranslate">
     <link rel="stylesheet" href="style.css">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
     <meta name="theme-color" content="#e60000">
 </head>
 <body>
-    <header class="site-header"><a href="#" class="logo"><img src="img5.jpg" alt="logo"> Sakura</a>
-    <nav class="nav-menu">
+    <header class="site-header">
+    <a href="#" class="logo">
+        <img src="img5.jpg" alt="logo"> Sakura
+    </a>
+    <button class="hamburger" id="hamburger" aria-label="Menu">☰</button>
+    <nav class="nav-menu" id="nav-menu">
         <a href="#hero-section">Home</a>
         <a href="#courses-section">Courses</a>
         <a href="#advantages-section">Why Us</a>
         <a href="#site-footer">Contacts</a>
-    </nav></header>
+    </nav>
+</header>
 
    <section id="hero-section">
     <div class="hero-info">
@@ -36,7 +42,7 @@
     <div class="stats-grid">
 
         <div class="stat-card">
-            <span class="stat-number">5</span>
+            <span class="stat-number">3</span>
             <span class="stat-label">Branches</span>
         </div>
 
@@ -52,7 +58,6 @@
 
     </div>
 </section>
-<!-- --------------------------- -->
 <section id="languages-section">
     <h2>Languages We Teach</h2>
     <div class="lang-grid">
@@ -88,29 +93,45 @@
         </article>
     </div>
 </section>
-<!-- --------------------------- -->
     <section id="courses-section">
     <h2 class="section-title">Our Study Programs</h2>
     
     <div class="courses-grid">
-        
-        <article class="course-card">
-            <h3>General English</h3>
-            <p class="course-desc">Boost your speaking skills, travel without barriers, and understand native speakers easily.</p>
-            <div class="course-price"><p>300 000 <span>sum</span> /month</p></div>
-        </article>
+       <article class="course-card">
+    <h3>🇬🇧 English</h3>
+    <p class="course-desc">IELTS, Multilevel — from beginner to advanced.</p>
+    <div class="course-price"><p>350 000 <span>sum</span> /month</p></div>
+</article>
 
-        <article class="course-card">
-            <h3>English for Kids</h3>
-            <p class="course-desc">Fun and interactive lessons for school students. We make learning English an exciting game!</p>
-            <div class="course-price"><p>300 000 <span>sum</span> /month</p></div>
-        </article>
+<article class="course-card">
+    <h3>🇰🇷 Korean</h3>
+    <p class="course-desc">TOPIK I & II preparation with certified teachers.</p>
+    <div class="course-price"><p>350 000 <span>sum</span> /month</p></div>
+</article>
 
-        <article class="course-card">
-            <h3>Exam Prep</h3>
-            <p class="course-desc">Intensive preparation for IELTS, TOEFL, or school exams. Get your high score with Sakura!</p>
-            <div class="course-price"><p>500 000 <span>sum</span> /month</p></div>
-        </article>
+<article class="course-card">
+    <h3>🇨🇳 Chinese</h3>
+    <p class="course-desc">HSK I–VI levels, speaking and writing focus.</p>
+    <div class="course-price"><p>350 000 <span>sum</span> /month</p></div>
+</article>
+
+<article class="course-card">
+    <h3>🇷🇺 Russian</h3>
+    <p class="course-desc">Free expression course for fluent communication.</p>
+    <div class="course-price"><p>350 000 <span>sum</span> /month</p></div>
+</article>
+
+<article class="course-card">
+    <h3>🇯🇵 Japanese</h3>
+    <p class="course-desc">JLPT preparation — reading, writing and speaking.</p>
+    <div class="course-price"><p>350 000 <span>sum</span> /month</p></div>
+</article>
+
+<article class="course-card">
+    <h3>🇩🇪 German</h3>
+    <p class="course-desc">Goethe certificate preparation for all levels.</p>
+    <div class="course-price"><p>350 000 <span>sum</span> /month</p></div>
+</article>
     </div>
 </section>
 
@@ -139,27 +160,52 @@
 
     </div>
 </section>
+ <section class="branches-section">
+<h2>Our Branches</h2>
+<div class="branches-grid">
+    <div class="branch-card">
+        <h3>A-branch</h3>
+        <p>Andijan</p>
+        <a href="https://maps.google.com/?q=Andijan+Sakura+a+blok" target="_blank" rel="noopener noreferrer">📍 Open in maps</a>
+    </div>
+    <div class="branch-card">
+        <h3>B-branch</h3>
+        <p>Andijan</p>
+        <a href="https://maps.google.com/?q=Andijan+Sakura+b+blok" target="_blank" rel="noopener noreferrer">📍 Open in maps</a>
+    </div>
+    <div class="branch-card">
+        <h3>X-branch</h3>
+        <p>Andijan</p>
+        <a href="https://maps.google.com/?q=Andijan+Sakura+a+blok" target="_blank" rel="noopener noreferrer">📍 Open in maps</a>
+    </div>
 
+</div>
+ </section>
 <footer id="site-footer">
     <div class="footer-container">
         
         <div class="footer-info">
             <h2>Contacts</h2>
             <p class="footer-text">Ready to start? Get in touch with Sakura today and book your schedule!</p>
-            <p class="footer-phone">📞 Phone: <strong>+998 94 416 66 44</strong></p>
-            <p class="footer-gmail">📧 Gmail: <a href="mailto:info.sakura@gmail.com">info.sakura@gmail.com</a></p>
+            <p class="footer-phone">📞 Phone: <a href="tel:+998944166644" style="color: #e60000;">+998 94 416 66 44</a></p>
+            <p class="footer-hours">🕐 Mon – Sat: 09:00 – 20:00</p>
         </div>
 
         <div class="footer-social">
-            <h3>Follow & Text Us</h3>
-            <a href="https://t.me/KayumovTemur?text=Hello!%20I%20have%20some%20questions%20about%20the%20courses." class="footer-tg-btn" target="_blank" rel="noopener noreferrer">📬 Write in Telegram</a>
+            <h3>Follow us</h3>
+            <a href="https://t.me/sakura_edu" class="footer-tg-btn" target="_blank" rel="noopener noreferrer">
+    <i class="fa-brands fa-telegram"></i> Our Telegram
+</a>
+<a href="https://instagram.com/sakura_andijan" target="_blank" rel="noopener noreferrer" class="footer-in-btn">
+    <i class="fa-brands fa-instagram"></i> Our Instagram
+</a>
         </div>
-
     </div>
 
     <div class="footer-bottom">
-        <p>&copy; 2026 Sakura. Created by Temur. All rights reserved.</p>
+        <p>&copy; 2026 Sakura. Created by    <a href="https://t.me/KayumovTemur" target="_blank" rel="noopener noreferrer" class="footer-tim">Temur</a>. All rights reserved.</p>
     </div>
 </footer>
+<script src="script.js"></script>
 </body>
 </html>
