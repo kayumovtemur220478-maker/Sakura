@@ -1,211 +1,406 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="uz">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sakura</title>
-    <meta name="description" content="Learn English, with Sakura personalized lessons for career, travel and exams. Book a free lesson today!">
+    <title>Sakura Language School</title>
+    <meta name="description" content="Sakura Language School — курсы английского, корейского, китайского, японского, немецкого и русского языков в Андижане. 3 филиала. Запишитесь бесплатно!">
     <meta name="google" content="notranslate">
     <link rel="stylesheet" href="style.css">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link rel="icon" href="img5.jpg" type="image/jpeg">
     <meta name="theme-color" content="#e60000">
+    <meta name="robots" content="index, follow">
+    <meta name="keywords" content="языковой центр Андижан, английский курс Андижан, IELTS Андижан, корейский язык Андижан, Sakura Language School">
+    <meta property="og:title" content="Sakura Language School Andijan">
+    <meta property="og:description" content="Курсы английского, корейского, китайского в Андижане. 3 филиала.">
+    <meta property="og:url" content="https://sakura-temur4.vercel.app">
 </head>
 <body>
     <header class="site-header">
     <a href="#" class="logo">
         <img src="img5.jpg" alt="logo"> Sakura
     </a>
+    <div class="lang-toggle">
+        <button class="lang-btn" data-lang="ru" onclick="setLang('ru', this)">RU</button>
+        <button class="lang-btn" data-lang="uz" onclick="setLang('uz', this)">UZ</button>
+        <button class="lang-btn active" data-lang="en" onclick="setLang('en', this)">EN</button>
+    </div>
     <button class="hamburger" id="hamburger" aria-label="Menu">☰</button>
-    <nav class="nav-menu" id="nav-menu">
-        <a href="#hero-section">Home</a>
-        <a href="#courses-section">Courses</a>
-        <a href="#advantages-section">Why Us</a>
-        <a href="#site-footer">Contacts</a>
-    </nav>
+   <nav class="nav-menu" id="nav-menu">
+    <a href="#hero-section" 
+       data-en="Home" data-ru="Главная" data-uz="Bosh sahifa">Home</a>
+    <a href="#courses-section" 
+       data-en="Courses" data-ru="Курсы" data-uz="Kurslar">Courses</a>
+    <a href="#advantages-section" 
+       data-en="Why Us" data-ru="О нас" data-uz="Biz haqimizda">Why Us</a>
+    <a href="#site-footer" 
+       data-en="Contacts" data-ru="Контакты" data-uz="Aloqa">Contacts</a>
+</nav>
 </header>
 <!-- ------------------------------------ -->
-   <section id="hero-section">
+  <section id="hero-section">
     <div class="hero-info">
-        <h1>Achieve Your Goals Confidently with Sakura</h1>
-        <p>Break barriers and build your future. Professional courses for languages, school preparation, and international exams.</p>
-
-        <a href="https://t.me/KayumovTemur?text=Hello!%20I%20want%20to%20book%20a%20free%20lesson." class="hero-btn" target="_blank" rel="noopener noreferrer"><span class="online-dot"></span>Book a Free Lesson</a>
+        <h1 data-en="Achieve Your Goals Confidently with Sakura"
+            data-ru="Достигайте своих целей уверенно с Sakura"
+            data-uz="Sakura bilan maqsadlaringizga erishing">
+            Achieve Your Goals Confidently with Sakura
+        </h1>
+        <p data-en="Break barriers and build your future. Professional courses for languages, school preparation, and international exams."
+           data-ru="Сломайте барьеры и постройте своё будущее. Профессиональные курсы по языкам и международным экзаменам."
+           data-uz="To'siqlarni yengib kelajagingizni quring. Tillar va xalqaro imtihonlar bo'yicha professional kurslar.">
+            Break barriers and build your future. Professional courses for languages, school preparation, and international exams.
+        </p>
+        <a href="https://t.me/KayumovTemur?text=Hello!%20I%20want%20to%20book%20a%20free%20lesson." 
+           class="hero-btn" target="_blank" rel="noopener noreferrer">
+            <span class="online-dot"></span>
+            <span data-en="Book a Free Lesson"
+                  data-ru="Записаться бесплатно"
+                  data-uz="Bepul darsga yozilish">Book a Free Lesson</span>
+        </a>
     </div>
-
     <div class="hero-image">
         <img src="pexels-tima-miroshnichenko-5427870.jpg" alt="Teacher">
     </div>
-
 </section>
 <section id="stats-section">
     <div class="stats-grid">
 
         <div class="stat-card">
             <span class="stat-number">3</span>
-            <span class="stat-label">Branches</span>
+            <span class="stat-label"
+                  data-en="Branches" 
+                  data-ru="Филиала"
+                  data-uz="Filiallar">Branches</span>
         </div>
 
         <div class="stat-card">
             <span class="stat-number">6</span>
-            <span class="stat-label">Languages</span>
+            <span class="stat-label"
+                  data-en="Languages" 
+                  data-ru="Языков"
+                  data-uz="Tillar">Languages</span>
         </div>
 
         <div class="stat-card">
             <span class="stat-number">500+</span>
-            <span class="stat-label">Students</span>
+            <span class="stat-label"
+                  data-en="Students"
+                  data-ru="Студентов"
+                  data-uz="Talabalar">Students</span>
         </div>
 
     </div>
 </section>
 <section id="languages-section">
-    <h2>Languages We Teach</h2>
+    <h2 data-en="Languages We Teach" 
+        data-ru="Языки, которым мы обучаем" 
+        data-uz="Biz oʻrgatadigan tillar">Languages We Teach</h2>
+        
     <div class="lang-grid">
+    
         <article class="lang-card">
             <span>🇬🇧</span>
-            <h3>English</h3>
+            <h3 data-en="English" data-ru="Английский" data-uz="Ingliz tili">English</h3>
             <p>IELTS · Multilevel</p>
         </article>
+
         <article class="lang-card">
             <span>🇰🇷</span>
-            <h3>Korean</h3>
+            <h3 data-en="Korean" data-ru="Корейский" data-uz="Koreys tili">Korean</h3>
             <p>TOPIK I & II</p>
         </article>
+
         <article class="lang-card">
             <span>🇨🇳</span>
-            <h3>Chinese</h3>
+            <h3 data-en="Chinese" data-ru="Китайский" data-uz="Xitoy tili">Chinese</h3>
             <p>HSK I–VI</p>
-        </article>
-         <article class="lang-card">
+        </article> 
+
+        <article class="lang-card">
             <span>🇷🇺</span>
-            <h3>Russian</h3>
-            <p>Free Expression</p>
+            <h3 data-en="Russian" data-ru="Русский" data-uz="Rus tili">Russian</h3>
+            <p data-en="Free Expression" data-ru="Разговорный курс" data-uz="Soʻzlashuv kursi">Free Expression</p>
         </article>
-         <article class="lang-card">
+
+        <article class="lang-card">
             <span>🇯🇵</span>  
-            <h3>Japanese</h3>
+            <h3 data-en="Japanese" data-ru="Японский" data-uz="Yapon tili">Japanese</h3>
             <p>JLPT</p>
         </article>
-         <article class="lang-card">
+
+        <article class="lang-card">
             <span>🇩🇪</span>
-            <h3>German</h3>
+            <h3 data-en="German" data-ru="Немецкий" data-uz="Nemis tili">German</h3>
             <p>Goethe</p>
         </article>
     </div>
 </section>
     <section id="courses-section">
-    <h2 class="section-title">Our Study Programs</h2>
+    <h2 class="section-title"
+        data-en="Our Study Programs"
+        data-ru="Наши программы обучения"
+        data-uz="Bizning taʼlim dasturlarimiz">Our Study Programs</h2>
     
     <div class="courses-grid">
-       <article class="course-card">
-    <h3>🇬🇧 English</h3>
-    <p class="course-desc">IELTS, Multilevel — from beginner to advanced.</p>
-    <div class="course-price"><p>350 000 <span>sum</span> /month</p></div>
-</article>
+     
+        <article class="course-card">
+            <h3 data-en="🇬🇧 English" data-ru="🇬🇧 Английский" data-uz="🇬🇧 Ingliz tili">🇬🇧 English</h3>
+            <p class="course-desc"
+               data-en="IELTS, Multilevel — from beginner to advanced."
+               data-ru="IELTS, Multilevel — от начинающего до продвинутого уровня."
+               data-uz="IELTS, Multilevel — boshlangʻichdan yuqori darajagacha.">IELTS, Multilevel — from beginner to advanced.</p>
+            <div class="course-price">
+                <p>350 000 <span data-en="sum /month" data-ru="сум /мес." data-uz="soʻm /oy">sum /month</span></p>
+            </div>
+        </article>
 
-<article class="course-card">
-    <h3>🇰🇷 Korean</h3>
-    <p class="course-desc">TOPIK I & II preparation with certified teachers.</p>
-    <div class="course-price"><p>350 000 <span>sum</span> /month</p></div>
-</article>
+        <article class="course-card">
+            <h3 data-en="🇰🇷 Korean" data-ru="🇰🇷 Корейский" data-uz="🇰🇷 Koreys tili">🇰🇷 Korean</h3>
+            <p class="course-desc"
+               data-en="TOPIK I & II preparation with certified teachers."
+               data-ru="Подготовка к TOPIK I и II с сертифицированными преподавателями."
+               data-uz="Sertifikatlangan oʻqituvchilar bilan TOPIK I & II imtihonlariga tayyorlov.">TOPIK I & II preparation with certified teachers.</p>
+            <div class="course-price">
+                <p>350 000 <span data-en="sum /month" data-ru="сум /мес." data-uz="soʻm /oy">sum /month</span></p>
+            </div>
+        </article>
 
-<article class="course-card">
-    <h3>🇨🇳 Chinese</h3>
-    <p class="course-desc">HSK I–VI levels, speaking and writing focus.</p>
-    <div class="course-price"><p>350 000 <span>sum</span> /month</p></div>
-</article>
+        <article class="course-card">
+            <h3 data-en="🇨🇳 Chinese" data-ru="🇨🇳 Китайский" data-uz="🇨🇳 Xitoy tili">🇨🇳 Chinese</h3>
+            <p class="course-desc"
+               data-en="HSK I–VI levels, speaking and writing focus."
+               data-ru="Уровни HSK I–VI, упор на разговорную речь и письмо."
+               data-uz="HSK I–VI darajalari, soʻzlashuv va yozuvga urgʻu beriladi.">HSK I–VI levels, speaking and writing focus.</p>
+            <div class="course-price">
+                <p>350 000 <span data-en="sum /month" data-ru="сум /мес." data-uz="soʻm /oy">sum /month</span></p>
+            </div>
+        </article>
 
-<article class="course-card">
-    <h3>🇷🇺 Russian</h3>
-    <p class="course-desc">Free expression course for fluent communication.</p>
-    <div class="course-price"><p>350 000 <span>sum</span> /month</p></div>
-</article>
+        <article class="course-card">
+            <h3 data-en="🇷🇺 Russian" data-ru="🇷🇺 Русский" data-uz="🇷🇺 Rus tili">🇷🇺 Russian</h3>
+            <p class="course-desc"
+               data-en="Free expression course for fluent communication."
+               data-ru="Разговорный курс для свободного и уверенного общения."
+               data-uz="Erkin muloqot va ravon soʻzlashuv uchun nutq oʻstirish kursi.">Free expression course for fluent communication.</p>
+            <div class="course-price">
+                <p>350 000 <span data-en="sum /month" data-ru="сум /мес." data-uz="soʻm /oy">sum /month</span></p>
+            </div>
+        </article>
 
-<article class="course-card">
-    <h3>🇯🇵 Japanese</h3>
-    <p class="course-desc">JLPT preparation — reading, writing and speaking.</p>
-    <div class="course-price"><p>350 000 <span>sum</span> /month</p></div>
-</article>
+        <article class="course-card">
+            <h3 data-en="🇯🇵 Japanese" data-ru="🇯🇵 Японский" data-uz="🇯🇵 Yapon tili">🇯🇵 Japanese</h3>
+            <p class="course-desc"
+               data-en="JLPT preparation — reading, writing and speaking."
+               data-ru="Подготовка к JLPT — чтение, письмо и разговорная речь."
+               data-uz="JLPT imtihoniga tayyorlov — oʻqish, yozish va soʻzlashuv.">JLPT preparation — reading, writing and speaking.</p>
+            <div class="course-price">
+                <p>350 000 <span data-en="sum /month" data-ru="сум /мес." data-uz="soʻm /oy">sum /month</span></p>
+            </div>
+        </article>
 
-<article class="course-card">
-    <h3>🇩🇪 German</h3>
-    <p class="course-desc">Goethe certificate preparation for all levels.</p>
-    <div class="course-price"><p>350 000 <span>sum</span> /month</p></div>
-</article>
+        <article class="course-card">
+            <h3 data-en="🇩🇪 German" data-ru="🇩🇪 Немецкий" data-uz="🇩🇪 Nemis tili">🇩🇪 German</h3>
+            <p class="course-desc"
+               data-en="Goethe certificate preparation for all levels."
+               data-ru="Подготовка к сертификату Goethe для всех уровней."
+               data-uz="Barcha darajalar uchun Gyote (Goethe) sertifikatiga tayyorlov.">Goethe certificate preparation for all levels.</p>
+            <div class="course-price">
+                <p>350 000 <span data-en="sum /month" data-ru="сум /мес." data-uz="soʻm /oy">sum /month</span></p>
+            </div>
+        </article>
     </div>
 </section>
 
+
 <section id="advantages-section">
-    <h2 class="advantages-title">Why Students Choose Us</h2>
+    <h2 class="advantages-title"
+        data-en="Why Students Choose Us"
+        data-ru="Почему студенты выбирают нас"
+        data-uz="Nega talabalar bizni tanlashadi?">Why Students Choose Us</h2>
     
     <div class="advantages-grid">
         
         <article class="adv-card">
             <div class="adv-icon"><img src="img2.jpg" loading="lazy" alt="Students read books"></div>
-            <h3 class="u">Book Club📚</h3>
-            <p class="i">We read and discuss fascinating books in English. A perfect way to blast your vocabulary and speak fluently!</p>
+            <h3 class="u" 
+                data-en="Book Club📚" 
+                data-ru="Книжный клуб📚" 
+                data-uz="Kitobxonlar klubi📚">Book Club📚</h3>
+            <p class="i"
+               data-en="We read and discuss fascinating books in English. A perfect way to blast your vocabulary and speak fluently!"
+               data-ru="Читаем и обсуждаем увлекательные книги на английском. Идеальный способ прокачать словарный запас и заговорить свободно!"
+               data-uz="Ingliz tilida qiziqarli kitoblarni oʻqiymiz va muhokama qilamiz. Lugʻat boyligini oshirish va ravon gapirish uchun ajoyib usul!">We read and discuss fascinating books in English. A perfect way to blast your vocabulary and speak fluently!</p>
         </article>
 
         <article class="adv-card">
             <div class="adv-icon"><img src="img3.jpg" loading="lazy" alt="Students play chess"></div>
-            <h3 class="u">Chess Nights♟️</h3>
-            <p class="i">Play chess and chat with friends in English. Train your strategic thinking and language skills at the same time!</p>
+            <h3 class="u" 
+                data-en="Chess Nights♟️" 
+                data-ru="Шахматные вечера♟️" 
+                data-uz="Shaxmat kechalari♟️">Chess Nights♟️</h3>
+            <p class="i"
+               data-en="Play chess and chat with friends in English. Train your strategic thinking and language skills at the same time!"
+               data-ru="Играйте в шахматы и общайтесь с друзьями на английском. Развивайте стратегическое мышление и языковые навыки одновременно!"
+               data-uz="Shaxmat oʻynang va doʻstlaringiz bilan ingliz tilida suhbatlashing. Bir vaqtning oʻzida ham strategik fikrlashni, ham til koʻnikmalarini rivojlantiring!">Play chess and chat with friends in English. Train your strategic thinking and language skills at the same time!</p>
         </article>
 
         <article class="adv-card">
             <div class="adv-icon"><img src="img4.jpg" loading="lazy" alt="Students speak in english"></div>
-            <h3 class="u">80% Speaking🗣️</h3>
-            <p class="i">No boring grammar drilling from old textbooks. You start talking from the very first minute of the lesson.</p>
+            <h3 class="u" 
+                data-en="80% Speaking🗣️" 
+                data-ru="80% Разговорной практики🗣️" 
+                data-uz="80% Soʻzlashuv amaliyoti🗣️">80% Speaking🗣️</h3>
+            <p class="i"
+               data-en="No boring grammar drilling from old textbooks. You start talking from the very first minute of the lesson."
+               data-ru="Никакой скучной зубрёжки грамматики по старым учебникам. Вы начинаете говорить с самой первой минуты урока!"
+               data-uz="Eski darsliklardan zerikarli grammatika yodlashlar yoʻq. Siz darsning birinchi daqiqasidanoq gapirishni boshlaysiz!">No boring grammar drilling from old textbooks. You start talking from the very first minute of the lesson.</p>
         </article>
 
     </div>
 </section>
- <section class="branches-section">
-<h2>Our Branches</h2>
-<div class="branches-grid">
-    <div class="branch-card">
-        <h3>A-branch</h3>
-        <p>Andijan</p>
-        <a href="https://maps.google.com/?q=Andijan+Sakura+a+blok" target="_blank" rel="noopener noreferrer">📍 Open in maps</a>
-    </div>
-    <div class="branch-card">
-        <h3>B-branch</h3>
-        <p>Andijan</p>
-        <a href="https://maps.google.com/?q=Andijan+Sakura+b+blok" target="_blank" rel="noopener noreferrer">📍 Open in maps</a>
-    </div>
-    <div class="branch-card">
-        <h3>X-branch</h3>
-        <p>Andijan</p>
-        <a href="https://maps.google.com/?q=Andijan+Sakura+a+blok" target="_blank" rel="noopener noreferrer">📍 Open in maps</a>
-    </div>
 
-</div>
- </section>
+<section class="branches-section">
+    <h2 data-en="Our Branches" 
+        data-ru="Наши филиалы" 
+        data-uz="Bizning filiallarimiz">Our Branches</h2>
+        
+    <div class="branches-grid">
+        
+        <div class="branch-card">
+            <h3 data-en="A-branch" data-ru="Филиал А" data-uz="A-filial">A-branch</h3>
+            <p data-en="Andijan" data-ru="Андижан" data-uz="Andijon">Andijan</p>
+            <a href="https://maps.app.goo.gl/2JKQ2w2uFbFQKEyS7?g_st=ac" 
+               target="_blank" 
+               rel="noopener noreferrer"
+               data-en="📍 Open in maps" 
+               data-ru="📍 Открыть на карте" 
+               data-uz="📍 Xaritada ochish">📍 Open in maps</a>
+        </div>
+
+        <div class="branch-card">
+            <h3 data-en="B-branch" data-ru="Филиал B" data-uz="B-filial">B-branch</h3>
+            <p data-en="Andijan" data-ru="Андижан" data-uz="Andijon">Andijan</p>
+            <a href="https://maps.app.goo.gl/2JKQ2w2uFbFQKEyS7?g_st=ac" 
+               target="_blank" 
+               rel="noopener noreferrer"
+               data-en="📍 Open in maps" 
+               data-ru="📍 Открыть на карте" 
+               data-uz="📍 Xaritada ochish">📍 Open in maps</a>
+        </div>
+
+        <div class="branch-card">
+            <h3 data-en="X-branch" data-ru="Филиал X" data-uz="X-filial">X-branch</h3>
+            <p data-en="Andijan" data-ru="Андижан" data-uz="Andijon">Andijan</p>
+            <a href="https://maps.app.goo.gl/2JKQ2w2uFbFQKEyS7?g_st=ac" 
+               target="_blank" 
+               rel="noopener noreferrer"
+               data-en="📍 Open in maps" 
+               data-ru="📍 Открыть на карте" 
+               data-uz="📍 Xaritada ochish">📍 Open in maps</a>
+        </div>
+    </div>
+</section>
+<!-- ----------------------------------------------- -->
+ <section id="reviews-section">
+    <h2 class="reviews-title"
+        data-en="What Our Students Say"
+        data-ru="Что говорят наши студенты"
+        data-uz="Talabalarimiz nima deydi">
+        What Our Students Say
+    </h2>
+
+    <div class="reviews-grid">
+
+        <article class="review-card">
+            <div class="review-stars">⭐⭐⭐⭐⭐</div>
+            <p class="review-text"
+               data-en="Best school in Andijan! My IELTS score improved from 5.5 to 7.0 in just 6 months."
+               data-ru="Лучшая школа в Андижане! Мой балл IELTS вырос с 5.5 до 7.0 всего за 6 месяцев."
+               data-uz="Andijonning eng yaxshi maktabi! IELTS ballim 6 oyda 5.5 dan 7.0 ga ko'tarildi.">
+               Best school in Andijan! My IELTS score improved from 5.5 to 7.0 in just 6 months.
+            </p>
+            <div class="review-author">
+                <span class="review-name">Aziz</span>
+                <span class="review-lang">🇬🇧 English</span>
+            </div>
+        </article>
+
+        <article class="review-card">
+            <div class="review-stars">⭐⭐⭐⭐⭐</div>
+            <p class="review-text"
+               data-en="Amazing teachers! I passed TOPIK II after just one year of study here."
+               data-ru="Потрясающие учителя! Я сдала TOPIK II всего за год обучения здесь."
+               data-uz="Ajoyib o'qituvchilar! Bu yerda bir yil o'qigach TOPIK II ni topdim.">
+               Amazing teachers! I passed TOPIK II after just one year of study here.
+            </p>
+            <div class="review-author">
+                <span class="review-name">Malika</span>
+                <span class="review-lang">🇰🇷 Korean</span>
+            </div>
+        </article>
+
+        <article class="review-card">
+            <div class="review-stars">⭐⭐⭐⭐⭐</div>
+            <p class="review-text"
+               data-en="HSK 4 passed! The speaking practice here is truly 80% of every lesson."
+               data-ru="Сдал HSK 4! Разговорная практика здесь — это реально 80% каждого урока."
+               data-uz="HSK 4 ni topdim! Bu yerdagi nutq amaliyoti har darsning 80 foizini tashkil etadi.">
+               HSK 4 passed! The speaking practice here is truly 80% of every lesson.
+            </p>
+            <div class="review-author">
+                <span class="review-name">Bobur</span>
+                <span class="review-lang">🇨🇳 Chinese</span>
+            </div>
+        </article>
+
+    </div>
+</section>
 <footer id="site-footer">
     <div class="footer-container">
         
         <div class="footer-info">
-            <h2>Contacts</h2>
-            <p class="footer-text">Ready to start? Get in touch with Sakura today and book your schedule!</p>
-            <p class="footer-phone">📞 Phone: <a href="tel:+998944166644" style="color: #e60000;">+998 94 416 66 44</a></p>
-            <p class="footer-hours">🕐 Mon – Sat: 09:00 – 20:00</p>
+            <h2 data-en="Contacts" data-ru="Контакты" data-uz="Kontaktlar">Contacts</h2>
+            <p class="footer-text"
+               data-en="Ready to start? Get in touch with Sakura today and book your schedule!"
+               data-ru="Готовы начать? Свяжитесь с Sakura сегодня и забронируйте своё расписание!"
+               data-uz="Boshlashga tayyormisiz? Bugoq Sakura bilan bogʻlaning va dars jadvalingizni band qiling!">Ready to start? Get in touch with Sakura today and book your schedule!</p>
+            <p class="footer-phone">
+                📞 <span data-en="Phone:" data-ru="Телефон:" data-uz="Telefon:">Phone:</span> 
+                <a href="tel:+998944166644" style="color: #e60000;">+998 94 416 66 44</a>
+            </p>
+            <p class="footer-hours">
+                🕐 <span data-en="Mon – Sat:" data-ru="Пн – Сб:" data-uz="Dush – Shan:">Mon – Sat:</span> 09:00 – 20:00
+            </p>
         </div>
 
-        <div class="footer-social">
-            <h3>Follow us</h3>
-            <a href="https://t.me/sakura_edu" class="footer-tg-btn" target="_blank" rel="noopener noreferrer">
-    <i class="fa-brands fa-telegram"></i> Our Telegram
-</a>
-<a href="https://instagram.com/sakura_andijan" target="_blank" rel="noopener noreferrer" class="footer-in-btn">
-    <i class="fa-brands fa-instagram"></i> Our Instagram
-</a>
-        </div>
+       <div class="footer-social">
+    <h3 data-en="Follow us" data-ru="Мы в соцсетях" data-uz="Bizni kuzating">Follow us</h3>
+    
+    <a href="https://t.me/sakura_edu" class="footer-tg-btn" target="_blank" rel="noopener noreferrer">
+        <i class="fa-brands fa-telegram"></i> 
+        <span data-en="Our Telegram" data-ru="Наш Telegram" data-uz="Bizning Telegram">Our Telegram</span>
+    </a>
+    
+    <a href="https://instagram.com/sakura_andijan" target="_blank" rel="noopener noreferrer" class="footer-in-btn">
+        <i class="fa-brands fa-instagram"></i> 
+        <span data-en="Our Instagram" data-ru="Наш Instagram" data-uz="Bizning Instagram">Our Instagram</span>
+    </a>
+</div>
+
     </div>
 
     <div class="footer-bottom">
-        <p>&copy; 2026 Sakura. Created by    <a href="https://t.me/KayumovTemur" target="_blank" rel="noopener noreferrer" class="footer-tim">Temur</a>. All rights reserved.</p>
+        <p>
+            &copy; 2026 Sakura. 
+            <span data-en="Created by" data-ru="Создано" data-uz="Yaratuvchi">Created by</span> 
+            <a href="https://t.me/KayumovTemur" target="_blank" rel="noopener noreferrer" class="footer-tim">Temur</a>. 
+            <span data-en="All rights reserved." data-ru="Все права защищены." data-uz="Barcha huquqlar himoyalangan.">All rights reserved.</span>
+        </p>
     </div>
 </footer>
+
 <script src="script.js"></script>
 </body>
 </html>
