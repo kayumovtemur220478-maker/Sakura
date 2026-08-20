@@ -851,7 +851,8 @@ a{
 }
 .footer-phone{
     display: flex;
-    flex-wrap: wrap;
+    /* flex-wrap: wrap; */
+    white-space: nowrap;
     align-items: center;
     justify-content: center;
     gap: 4px;
