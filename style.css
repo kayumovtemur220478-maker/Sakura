@@ -483,26 +483,17 @@ a{
     color: black;
     letter-spacing: 0px;
 }
-.phone-info {
+.footer-phone{
     display: flex;
-    flex-direction: column;
+    flex-wrap: wrap;
     align-items: center;
-    gap: 8px;
+    gap: 4px;
+    padding: 10px;
+    width: 100%;
+    font-size: 15px;
 }
-
-.phone-title {
-    display: flex;
-    align-items: center;
-    gap: 10px;
-    font-size: 28px;
-    font-weight: 600;
-}
-
-.phone-number {
+.footer-phone a {
     white-space: nowrap;
-    font-size: 28px;
-    font-weight: 700;
-    color: #e60000;
 }
 .footer-tg-btn, .footer-in-btn{
     display:flex;
@@ -859,9 +850,8 @@ a{
     padding: 10px;
     color: black;
 }
-/* .footer-phone{
+.footer-phone{
     display: flex;
-    flex-wrap: wrap;
     align-items: center;
     justify-content: center;
     gap: 4px;
@@ -869,11 +859,11 @@ a{
     width: 100%;
     font-size: 16px;
     font-weight: 600;
-    text-align: center;
+    white-space: nowrap;
 }
 .footer-phone a {
     white-space: nowrap;
-} */
+}
 .footer-bottom{
     display:flex;
     width: 100%;
