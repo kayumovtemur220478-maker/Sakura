@@ -401,6 +401,7 @@ a{
     gap: 15px;
     min-width: 0;
     overflow: hidden;
+    min-height: 520px;
 }
 
 .review-card:hover {
@@ -950,5 +951,13 @@ a{
 .nav-menu.open {
     display: flex;
     grid-column: 1 / -1;
+}
+.section-title, .advantages-title, .reviews-title, #languages-section h2, .branches-section h2 {
+    font-size: 32px;
+    letter-spacing: 1px;
+    margin: 20px 0;
+    line-height: 1.2;
+    word-break: normal;
+    overflow-wrap: normal;
 }
  } 
