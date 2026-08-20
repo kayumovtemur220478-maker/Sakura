@@ -797,7 +797,7 @@ a{
 .hero-info{
     display: flex;
     width: 100%;
-    align-items: flex-start;
+    align-items: center;
     text-align: center;
     justify-content: center;
     flex-direction: column;
@@ -851,8 +851,7 @@ a{
 }
 .footer-phone{
     display: flex;
-    /* flex-wrap: wrap; */
-    white-space: nowrap;
+    flex-wrap: wrap;
     align-items: center;
     justify-content: center;
     gap: 4px;
@@ -867,6 +866,7 @@ a{
 }
 .footer-bottom{
     display:flex;
+    width: 100%;
     height: auto;
     min-height: 50px;
     align-items: center;
@@ -875,7 +875,7 @@ a{
     font-family: 'Montserrat', sans-serif;
     border-top: 3px solid orangered;
     font-weight: 600;
-    font-size: 12px;
+    font-size: 10px;
     letter-spacing: 0px;
     padding: 12px 10px;
     background: linear-gradient(45deg, #ff4d4d, #e60000, #ff4d4d);
@@ -910,7 +910,7 @@ a{
     padding: 30px 15px; 
 }
 .logo img {
-    height: 50px;
+    height: 30px;
     width: auto; 
     border-radius: 50%;
 }
