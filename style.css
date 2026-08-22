@@ -71,7 +71,7 @@ a{
     user-select: none;
 }
 .logo img {
-  height: 35px;         
+  height: 50px;         
     width: auto;           
     border-radius: 50%;    
     object-fit: cover;
@@ -754,6 +754,8 @@ a{
 
 .hamburger {
     display: flex;
+    min-width: 36px;
+    flex-shrink: 0;
 }
 
 .nav-menu {
@@ -787,6 +789,9 @@ a{
     padding: 5px;
     gap: 10px;
     margin-left: 0px;
+    flex-shrink: 1;
+    min-width: 0;
+    
 }
 #hero-section{
     display: grid;
@@ -859,7 +864,6 @@ a{
     width: 100%;
     font-size: 16px;
     font-weight: 600;
-    white-space: nowrap;
 }
 .footer-phone a {
     white-space: nowrap;
@@ -881,7 +885,7 @@ a{
     background: linear-gradient(45deg, #ff4d4d, #e60000, #ff4d4d);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
-    white-space: nowrap;
+    word-break: break-word;
 }
     .course-card {
         width: 100%; 
@@ -959,5 +963,20 @@ a{
     line-height: 1.2;
     word-break: normal;
     overflow-wrap: normal;
+}
+.lang-card, 
+.course-card, 
+.review-card, 
+.branch-card {
+    overflow: hidden;
+    word-break: break-word;
+    overflow-wrap: break-word;
+}
+
+.lang-card p,
+.course-desc,
+.review-text {
+    white-space: normal;
+    word-break: break-word;
 }
  } 
