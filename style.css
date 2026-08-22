@@ -879,13 +879,13 @@ a{
     font-family: 'Montserrat', sans-serif;
     border-top: 3px solid orangered;
     font-weight: 600;
-    font-size: 10px;
+    font-size: 9px;
     letter-spacing: 0px;
     padding: 12px 10px;
     background: linear-gradient(45deg, #ff4d4d, #e60000, #ff4d4d);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
-    word-break: break-word;
+    white-space: nowrap;
 }
     .course-card {
         width: 100%; 
@@ -980,7 +980,7 @@ a{
 }
 .lang-card h3{
    font-family: 'Montserrat' , sans-serif;
-   font-size: 19px;
+   font-size: 15px;
    font-weight: 600;
    color: #1a1a1a;
    width: 100%;
