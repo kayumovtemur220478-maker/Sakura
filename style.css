@@ -977,6 +977,13 @@ a{
 .course-desc,
 .review-text {
     white-space: normal;
-    word-break: break-word;
+}
+.lang-card h3{
+   font-family: 'Montserrat' , sans-serif;
+   font-size: 19px;
+   font-weight: 600;
+   color: #1a1a1a;
+   width: 100%;
+   white-space: nowrap;
 }
  } 
