@@ -664,6 +664,9 @@ a{
     border-radius: 12px;
     box-shadow: 0 4px 15px rgba(0,0,0,0.06);
     transition: 0.3s ease;
+    font-family: Arial, Helvetica, sans-serif;
+    gap: 10px;
+    font-size: 20px;
 }
 .branch-card:hover{
     transform: translateY(-8px);
@@ -682,6 +685,17 @@ a{
  .branch-card a:hover{
     opacity: 0.6;
  }
+ .branch-address {
+    font-family: sans-serif;
+    font-size: 14px;
+    color: #444;
+}
+
+.branch-hours {
+    font-family: sans-serif;
+    font-size: 14px;
+    color: #888;
+}
  .lang-toggle{
     display: flex;
     align-items: center;
@@ -873,9 +887,6 @@ a{
     width: 100%;
     height: auto;
     min-height: 50px;
-    align-items: center;
-    text-align: center;
-    justify-content: center;
     font-family: 'Montserrat', sans-serif;
     border-top: 3px solid orangered;
     font-weight: 600;
@@ -969,7 +980,7 @@ a{
 .review-card, 
 .branch-card {
     overflow: hidden;
-    word-break: break-word;
+    word-break: normal;
     overflow-wrap: break-word;
 }
 
@@ -977,6 +988,7 @@ a{
 .course-desc,
 .review-text {
     white-space: normal;
+    letter-spacing: 0px;
 }
 .lang-card h3{
    font-family: 'Montserrat' , sans-serif;
@@ -984,6 +996,6 @@ a{
    font-weight: 600;
    color: #1a1a1a;
    width: 100%;
-   white-space: nowrap;
+   word-break: normal;
 }
- } 
+}
