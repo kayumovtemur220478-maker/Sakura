@@ -980,7 +980,7 @@ a{
 .review-card, 
 .branch-card {
     overflow: hidden;
-    word-break: normal;
+    word-break: break-word;
     overflow-wrap: break-word;
 }
 
@@ -992,10 +992,11 @@ a{
 }
 .lang-card h3{
    font-family: 'Montserrat' , sans-serif;
-   font-size: 15px;
+   font-size: 13px;
    font-weight: 600;
    color: #1a1a1a;
    width: 100%;
-   word-break: normal;
+   /* word-break: normal; */
+   word-break: break-word;
 }
 }
